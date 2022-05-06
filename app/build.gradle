@@ -18,15 +18,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'junit:junit:4.13.1'
 
-    /* OAuth2 */
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-
-    /* session을 DB에 저장하기 위함 */
-    implementation 'org.springframework.session:spring-session-jdbc'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+//    implementation 'org.springframework.session:spring-session-jdbc'
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
